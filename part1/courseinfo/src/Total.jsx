@@ -7,5 +7,5 @@
 
 }
 
-export default Total
+export default Total;
 

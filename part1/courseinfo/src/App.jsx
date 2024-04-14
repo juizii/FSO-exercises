@@ -2,10 +2,10 @@ import Header from "./Header"; //Remember to import as well!
 import Content from "./Content";
 import Total from "./Total";
 
-const App = () => {
+const App = () => { //function expression; components are essentially functions.
   const course = "Half Stack application development";
 
-  //Array with key values
+  //array with key values
   const parts = [
     { part: "Fundamentals of React", exercises: 10 },
     { part: "Using props to pass data", exercises: 7 },
@@ -23,6 +23,9 @@ const App = () => {
     </>
   );
 };
+
+
+// OLD INFO
 
 // const App = () => {
 //   // const-definitions
