@@ -7,17 +7,17 @@ const App = () => { //function expression; components are essentially functions.
 
   //array with key values
   const parts = [
-    { part: "Fundamentals of React", exercises: 10 },
-    { part: "Using props to pass data", exercises: 7 },
-    { part: "State of a component", exercises: 14 },
+    { id: 1 , part: "Fundamentals of React", exercises: 10 },
+    { id: 2 , part: "Using props to pass data", exercises: 7 },
+    { id: 3 , part: "State of a component", exercises: 14 },
     //can add other parts here if needed.
   ];
 
   return (
     <>
       <Header course={course} />
-      {parts.map((part, index) => (
-        <Content key={index} part={part.part} exercise={part.exercises} />
+      {parts.map((part) => (
+        <Content key={part.id} part={part.part} exercise={part.exercises} />
       ))}
       <Total parts={parts} />
     </>
